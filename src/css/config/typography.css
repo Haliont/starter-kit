@@ -1,0 +1,12 @@
+:root {
+  --fontFamily: monospace;
+  --lineHeight: 1.5;
+  --fontSize: 16px;
+
+  --fontSize--text: 1rem;
+
+  --fontSize--h1: 3rem;
+  --fotnSize--h2: 2rem;
+  --fontSize--h3: 1rem;
+
+}
