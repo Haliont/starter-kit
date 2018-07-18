@@ -1,0 +1,17 @@
+block pageInfo
+
+doctype html
+html(lang='ru')
+  include ../components/head/head
+  body(class="page" class=page.name?"page--"+page.name:false)
+    .page__header
+      +header()
+
+    .page__content
+    block content
+
+    .page__footer
+      +footer()
+
+    block vendors
+    block scripts
