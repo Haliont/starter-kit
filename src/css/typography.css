@@ -1,20 +1,20 @@
 h1,
 .h1 {
-  font-size: 2rem;
+  font-size: var(--fontSize--h1);
 }
 
 h2,
 .h2 {
-  font-size: 1.5rem;
+  font-size: var(--fontSize--h2);
 }
 
 h3,
 .h3 {
-  font-size: 1.2rem;
+  font-size: var(--fontSize--h3);
 }
 
 p,
 .paragraph {
-  font-size: 1rem;
+  font-size: var(--fontSize--text);
   margin-bottom: 0.5rem;
 }
