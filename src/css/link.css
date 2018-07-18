@@ -1,0 +1,16 @@
+@custom-selector :--link a, .link;
+@custom-selector :--enter :hover, :active, :focus;
+
+:--link {
+  color: var(--colorLink);
+  transition: color .3s ease;
+}
+
+:--link:--enter,
+.link--active {
+  color: var(--colorLink--active);
+}
+
+:--link:visited {
+  color: var(--colorLink--visited);
+}
