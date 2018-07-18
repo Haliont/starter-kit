@@ -8,7 +8,7 @@ const createPage = (name) => {
   console.log(`Страница ${name} создана`);
 };
 
-const typesActions = {
+const creaters = {
   '--component': createComponent,
   '--page': createPage,
   '-c': createComponent,
@@ -16,7 +16,7 @@ const typesActions = {
 }
 
 module.exports = (type) => {
-  const creater = typesActions[type];
+  const creater = creaters[type];
   if (!creater) {
     const message = `\nТип ${type} не определен. Выберите из этих:\n--component -c - компонент\n--page      -p - страница`;
     throw new Error(message);
