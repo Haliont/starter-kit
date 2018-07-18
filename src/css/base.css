@@ -4,18 +4,13 @@
   box-sizing: inherit;
 }
 
-html,
-body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
 html {
+  height: 100%;
   font-size: var(--fontSize);
 }
 
 body {
+  min-height: 100%;
   color: var(--colorText);
   line-height: var(--lineHeight);
   font-size: var(--fontSize--text);
