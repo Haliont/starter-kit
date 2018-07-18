@@ -1,0 +1,13 @@
+:root {
+  --colorBlack: #000;
+  --colorWhite: #fff;
+
+  --colorMain: #ef4343;
+  --colorAccent: #7cef43;
+
+  --colorText: var(--colorBlack);
+
+  --colorLink: #0059b2;
+  --colorLink--active: #ba1000;
+  --colorLink--visited: #551a8b;
+}
