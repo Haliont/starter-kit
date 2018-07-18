@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: var(--fontSize);
+}
+
+body {
+  color: var(--colorText);
+  line-height: var(--lineHeight);
+  font-size: var(--fontSize--text);
+  background-color: var(--colorWhite);
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
