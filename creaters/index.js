@@ -1,12 +1,5 @@
-const fs = require('fs');
-
-const createComponent = (name) => {
-  console.log(`Компонент ${name} создан`);
-};
-
-const createPage = (name) => {
-  console.log(`Страница ${name} создана`);
-};
+const createComponent = require('./createComponent');
+const createPage = require('./createPage');
 
 const creaters = {
   '--component': createComponent,
