@@ -1,0 +1,8 @@
+extends ../../layouts/main.pug
+include ../../components/news/news
+
+block pageData
+  include ./data.pug
+
+block content
+  +news(newsList)

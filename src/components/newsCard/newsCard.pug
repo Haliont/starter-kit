@@ -1,0 +1,9 @@
+mixin newsCard(title, desc, mods)
+  include ../genMods
+  - const allMods = genMods('newsCard', mods);
+  article.newsCard(class=allMods)&attributes(attributes)
+    header.newsCard__header
+      h3.newsCard__title!= title
+    .newsCard__body
+      .newsCard__desc!= desc
+    footer.newsCard__footer

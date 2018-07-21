@@ -1,0 +1,13 @@
+include ../newsCard/newsCard
+include ../sectionTitle/sectionTitle
+
+mixin news(list)
+  section.news&attributes(attributes)
+    +sectionTitle(class="news__title") Новости
+    .news__list
+      each item in list
+        +newsCard(
+          item.title,
+          item.desc,
+          item.mods
+        )

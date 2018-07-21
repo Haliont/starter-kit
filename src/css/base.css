@@ -11,6 +11,7 @@ html {
 
 body {
   min-height: 100%;
+  margin: 0;
   color: var(--colorText);
   line-height: var(--lineHeight);
   font-size: var(--fontSize--text);

@@ -1,12 +1,12 @@
 include ../components/header/header.pug
 include ../components/footer/footer.pug
 
-block pageInfo
+block pageData
 
 doctype html
 html(lang='ru')
   include ../components/head/head
-  body(class="page" class=page.name?"page--"+page.name:false)
+  body(class="page" class=pageMod?"page--"+pageMod:false)
     block header
       .page__header
         +header()

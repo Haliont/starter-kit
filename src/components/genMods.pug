@@ -1,0 +1,6 @@
+-
+  const modDiv = '--';
+  const genMods = (blockName, mods = '') => !mods ? '' : mods
+    .split(',')
+    .map(mod => `${blockName}${modDiv}${mod}`)
+    .join(' ');
