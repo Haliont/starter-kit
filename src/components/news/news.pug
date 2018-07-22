@@ -3,16 +3,15 @@ include ../sectionTitle/sectionTitle
 include ../grid/grid
 
 mixin news(title, list)
-  section.news&attributes(attributes)
+  section.news.container&attributes(attributes)
     +sectionTitle(class="news__title")!= title
-    .news__list
-      +grid
-        each item in list
-          +gridItem
-            +newsCard(
-              item.title,
-              item.timePeriod,
-              item.desc,
-              item.source,
-              item.mods
-            )
+    +grid(class="news__grid")
+      each item in list
+        +gridItem
+          +newsCard(
+            item.title,
+            item.timePeriod,
+            item.desc,
+            item.source,
+            item.mods
+          )

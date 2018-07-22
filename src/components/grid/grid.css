@@ -1,3 +1,14 @@
 .grid {
-  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: var(--siteWidth);
+  margin: 0 calc(var(--indent) * -1);
+}
+
+.grid__item {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 270px;
+  margin: var(--indent);
 }

@@ -24,3 +24,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  max-width: var(--siteWidth);
+  padding: 0 var(--indent);
+  margin: 0 auto;
+}
