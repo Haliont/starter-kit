@@ -1,13 +1,18 @@
 include ../newsCard/newsCard
 include ../sectionTitle/sectionTitle
+include ../grid/grid
 
-mixin news(list)
+mixin news(title, list)
   section.news&attributes(attributes)
-    +sectionTitle(class="news__title") Новости
+    +sectionTitle(class="news__title")!= title
     .news__list
-      each item in list
-        +newsCard(
-          item.title,
-          item.desc,
-          item.mods
-        )
+      +grid
+        each item in list
+          +gridItem
+            +newsCard(
+              item.title,
+              item.timePeriod,
+              item.desc,
+              item.source,
+              item.mods
+            )

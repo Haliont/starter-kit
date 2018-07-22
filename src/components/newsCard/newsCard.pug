@@ -1,9 +1,16 @@
-mixin newsCard(title, desc, mods)
+mixin newsCard(title, timePeriod, desc, source, mods)
   include ../genMods
   - const allMods = genMods('newsCard', mods);
   article.newsCard(class=allMods)&attributes(attributes)
     header.newsCard__header
-      h3.newsCard__title!= title
+      .newsCard__category
+        i.newsCard__categoryIcon
+        h3.newsCard__categoryTitle!=title
+      .newsCard__timePeriod!= timePeriod
     .newsCard__body
       .newsCard__desc!= desc
-    footer.newsCard__footer
+
+    if source
+      footer.newsCard__footer
+        cite.newsCard__source!= source
+        //- .newsCard__addToCalendarWrap
